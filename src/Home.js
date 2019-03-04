@@ -8,23 +8,23 @@ class Home extends Component {
     super(props);
 
     this.state = {
-      movies: [
+      players: [
       ],
   };
 }
 
   async componentWillMount() {
-    let url = "https://api.mysportsfeeds.com/v2.0/pull/mlb/2016/player_stats_totals.json"
+    let url = "http://lookup-service-prod.mlb.com/json/named.player_info.bam?sport_code=%27mlb%27&player_id=%27493316%27"
 
     await fetch(url)
     .then(response => response.json())
     .then(
       (result) => {
       this.setState({
-        movies: JSON.parse(JSON.stringify(result))
+        players: JSON.parse(JSON.stringify(result))["player_info"]["queryResults"]["row"]
       });
-      console.log(this.state.movies);
-      //console.log("hello")
+      console.log(this.state.players);
+      console.log("hello")
   });
   }
 
@@ -32,9 +32,9 @@ class Home extends Component {
     return(
     <>
 
-    <div class="wrap">
-       <p class="pageTitle">Search for Movies</p>
-       <div class="search">
+    <div className="wrap">
+       <p className="pageTitle">Search for Movies</p>
+       <div className="search">
 
         </div>
     </div>
