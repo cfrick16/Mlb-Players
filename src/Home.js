@@ -39,7 +39,7 @@ class Home extends Component {
   handleSearchButton = () => {
     this.setState ({
       players: [],
-      flag: true,
+      flag: false,
       page: 0,
       search: this.refs.query.value
   });
@@ -61,6 +61,9 @@ class Home extends Component {
 
 
   render() {
+    if(!this.state.flag){
+      return(<></>);
+    }
     return(
     <>
 
