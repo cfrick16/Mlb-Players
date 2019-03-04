@@ -4,12 +4,15 @@
   "private": true,
   "dependencies": {
     "query-string": "^6.2.0",
-    "react": "^16.8.1",
-    "react-dom": "^16.8.1",
+    "react": "^16.8.3",
+    "react-dom": "^16.8.3",
     "react-paginate": "5.2.4",
     "react-router-dom": "4.3.1",
     "react-scripts": "2.1.5",
-    "react-solr-connector": "^1.1.1"
+    "react-solr-connector": "^1.1.1",
+    "reactstrap": "^7.1.0",
+    "react-bootstrap": "^0.32.4",
+    "bootstrap": "^4.1.3"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -26,5 +29,5 @@
     "not ie <= 11",
     "not op_mini all"
   ],
-  "homepage": "ec2-user@ec2-3-17-26-66.us-east-2.compute.amazonaws.com/"
+  "homepage": "http://colinfrick.s3-website-us-east-1.amazonaws.com"
 }

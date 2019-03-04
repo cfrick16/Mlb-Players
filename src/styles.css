@@ -1,105 +1,24 @@
-@import url(https://fonts.googleapis.com/css?family=Open+Sans);
-
-body{
-  background: #f2f2f2;
-  font-family: 'Open Sans', sans-serif;
-}
-
-
-
-.searchTerm {
-  position: relative;
-  float: left;
-  width: 100%;
-  border: 3px solid #00B4CC;
-  padding: 5px;
-  height: 40px;
-  border-radius: 5px;
-  outline: none;
-  color: #9DBFAF;
-}
-
-.searchTerm:focus{
-  color: #00B4CC;
-}
-
-.searchButton {
-  position: absolute;
-  right: -70px;
-  width: 80px;
-  height: 56px;
-  border: 1px solid #00B4CC;
-  background: #00B4CC;
+.card-title{
+  font-size: 24pt;
   text-align: center;
-  color: #fff;
-  border-radius: 5px;
-  cursor: pointer;
-  font-size: 20px;
 }
 
-/*Resize the wrap to see the search bar change!*/
-.wrap{
-  position: absolute;
-  top: 30%;
-  left: 35%;
-  right: 30%;
-  /* transform: translate(-50%, -50%); */
-}
-
-.header{
-  position: relative;
-  width: 30%;
-  margin: 0 auto;
-  /* transform: translate(-50%, -50%); */
-}
-
-.search {
-  width: 100%;
-  position: relative;
-  right:15%;
-  padding-bottom: 25%;
-}
-
-.searchResults{
-  position: relative;
-}
-
-
-
-.pageTitle{
-  font-size: 200%;
-  position: relative;
+.card-text{
   text-align: center;
-  font-weight: bold;
 }
 
-.buttonImage{
-  height: 50px;
-  width: 60px;
+.head{
+  margin-left: 40%;
+  margin-right: 35%;
+}
+.page-header{
+  text-align: center;
+  font-size: 30pt;
+  padding-bottom: 1%;
 }
 
-.results{
+.search{
   position: relative;
-  background-color: beige;
-  padding-bottom: 2px;
-
-}
-
-.movieTitle{
-  font-weight: bold;
-  font-size: 18pt;
-  padding-left: 3%;
-  padding-bottom: 0%;
-}
-
-.movieDescription{
-  padding-left: 5%;
-  padding-top: 0%;
-
-}
-
-.releaseDate{
-  font-size: 10pt;
-  font-style: oblique;
-  margin-left: 3%;
+  margin-left: 15%;
+  padding-bottom: 3%;
 }
